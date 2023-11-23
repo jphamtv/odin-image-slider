@@ -1,0 +1,92 @@
+/* style.css */
+
+/* * {
+  outline: 1px solid lightcoral;
+} */
+
+.image-carousel {
+  position: relative;
+  width: 1000px;
+  height: 600px;
+  background-color: #eeeeee;
+  overflow: hidden;
+  margin: 100px auto 20px;
+  z-index: 1;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  width: 3100px;
+  height: 600px;
+  background-color: lightblue;
+  overflow: hidden;
+  transform: translateX(100px);
+  transition: transform 300ms;
+  z-index: 1;
+}
+
+img {
+  height: 600px;
+  width: auto;
+  background-color: lightcoral;
+}
+
+.button-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  height: 600px;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+.previous-image-btn,
+.next-image-btn {
+  width: 120px;
+  height: 100%;
+  color: #fff;
+  font-weight: bold;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.previous-image-btn:hover,
+.next-image-btn:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.nav-dot-container {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  width: 1000px;
+  margin: 20px auto;
+  z-index: 10;
+}
+
+.nav-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 26px;
+  border: 1px solid #000;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.nav-dot:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.current {
+  background-color: rgba(255, 255, 255, 0.6);
+}
